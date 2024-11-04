@@ -13,7 +13,7 @@ const VideoHome = () => {
     responsive: true,
     fluid: true,
     sources: [{
-      src: urls.storybook.hiTrue,
+      src: urls.storybook.adaptive ,
       type: 'application/x-mpegURL'
     }],
     // html5: {

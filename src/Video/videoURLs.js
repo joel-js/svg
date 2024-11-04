@@ -27,6 +27,13 @@ export const urls = {
         get hi() { return this.adaptive + '&hi' },
         get lo() { return this.adaptive + '&lo' },
     },
+    hiramar: {
+        adaptive: "https://sitesecuritysystems.net:7001/hls/25cbbba7-9a7a-9e14-26de-3efbb303ff8b.m3u8?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHp0aG1wOmMwMmE2ZmY4MzVjMmYzMWZmOTM2MTJiOGFlMThmZDcx",
+        get hiTrue() { return this.adaptive + '&hi=true' },
+        get loTrue() { return this.adaptive + '&lo=true' },
+        get hi() { return this.adaptive + '&hi' },
+        get lo() { return this.adaptive + '&lo' },
+    },
     hevc: {
         apple: {
             url: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8"

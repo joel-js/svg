@@ -7,7 +7,7 @@ import "@videojs/http-streaming";
 function checkHEVCSupport() {
   const video = document.createElement('video');
   // Check for HEVC support
-  const hevcSupport = video.canPlayType('video/mp4; codecs="hevc,mp4a.40.2"') || 
+  const hevcSupport = video.canPlayType('video/mp4; codecs="hvc1.1.6.L93.B0"') || 
                       video.canPlayType('video/mp4; codecs="hevc,aac"');
   console.log("HEVC Support: ", hevcSupport);
   return hevcSupport !== "";
@@ -109,6 +109,7 @@ export const VideoJS = (props) => {
       player.on('error', () => {
         const error = player.error();
         console.error('Video Player Error:', {
+          error: error,
           code: error.code,
           message: error.message,
           type: error.type,
