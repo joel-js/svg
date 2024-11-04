@@ -1,45 +1,29 @@
-import React from 'react';
-
-// This imports the functional component from the previous sample.
-import VideoJS from './VideoPlayer'
+import VideoJS from './VideoPlayer';
 import { urls } from './videoURLs';
 
 const VideoHome = () => {
-  const playerRef = React.useRef(null);
-
   const videoJsOptions = {
     autoplay: true,
     controls: true,
     responsive: true,
     fluid: true,
-    sources: [{
-      src: urls.storybook.adaptive ,
-      type: 'application/x-mpegURL, codecs="hevc,mp4a.40.2"'
-    }],
-    /*
-    html5: {
-      vhs: {
-        overrideNative: true
+    sources: [
+      {
+        src: urls.storybook.adaptive,
+        type: 'application/x-mpegURL',
       },
-      nativeAudioTracks: false,
-      nativeVideoTracks: false
-    }
-      */
+    ],
   };
 
   const handlePlayerReady = (player) => {
-    playerRef.current = player;
-
-    // You can handle player events here, for example:
     player.on('waiting', () => {
       console.log('player is waiting');
     });
-
     player.on('dispose', () => {
       console.log('player will dispose');
     });
   };
-  
+
   return (
     <>
       <div>Rest of app here</div>
@@ -50,6 +34,60 @@ const VideoHome = () => {
 }
 
 export default VideoHome;
+
+
+// import React from 'react';
+
+// // This imports the functional component from the previous sample.
+// import VideoJS from './VideoPlayer'
+// import { urls } from './videoURLs';
+
+// const VideoHome = () => {
+//   const playerRef = React.useRef(null);
+
+//   const videoJsOptions = {
+//     autoplay: true,
+//     controls: true,
+//     responsive: true,
+//     fluid: true,
+//     sources: [{
+//       src: urls.storybook.adaptive ,
+//       type: 'application/x-mpegURL, codecs="hevc,mp4a.40.2"'
+//     }],
+//     /*
+//     html5: {
+//       vhs: {
+//         overrideNative: true
+//       },
+//       nativeAudioTracks: false,
+//       nativeVideoTracks: false
+//     }
+//       */
+//   };
+
+//   const handlePlayerReady = (player) => {
+//     playerRef.current = player;
+
+//     // You can handle player events here, for example:
+//     player.on('waiting', () => {
+//       console.log('player is waiting');
+//     });
+
+//     player.on('dispose', () => {
+//       console.log('player will dispose');
+//     });
+//   };
+  
+//   return (
+//     <>
+//       <div>Rest of app here</div>
+//       <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+//       <div>Rest of app here</div>
+//     </>
+//   );
+// }
+
+// export default VideoHome;
 
 // // VideoHome.js
 // import React from 'react';
