@@ -14,15 +14,17 @@ const VideoHome = () => {
     fluid: true,
     sources: [{
       src: urls.storybook.adaptive ,
-      type: 'application/x-mpegURL'
+      type: 'application/x-mpegURL, codecs="hevc,mp4a.40.2"'
     }],
-    // html5: {
-    //   vhs: {
-    //     overrideNative: true
-    //   },
-    //   nativeAudioTracks: false,
-    //   nativeVideoTracks: false
-    // }
+    /*
+    html5: {
+      vhs: {
+        overrideNative: true
+      },
+      nativeAudioTracks: false,
+      nativeVideoTracks: false
+    }
+      */
   };
 
   const handlePlayerReady = (player) => {
