@@ -81,29 +81,29 @@ export const VideoJS = (props) => {
           onReady && onReady(player);
         }
       ));
-      player.on('loadedmetadata', () => {
-        const qualityLevels = player.qualityLevels();
-        if (qualityLevels) {
-          // Log available quality levels and their codecs
-          for (let i = 0; i < qualityLevels.length; i++) {
-            const level = qualityLevels[i];
-            console.log(`Quality level ${i}:`, {
-              bandwidth: level.bitrate,
-              width: level.width,
-              height: level.height,
-              codec: level.currentCodec
-            });
-          }
+      // player.on('loadedmetadata', () => {
+      //   const qualityLevels = player.qualityLevels();
+      //   if (qualityLevels) {
+      //     // Log available quality levels and their codecs
+      //     for (let i = 0; i < qualityLevels.length; i++) {
+      //       const level = qualityLevels[i];
+      //       console.log(`Quality level ${i}:`, {
+      //         bandwidth: level.bitrate,
+      //         width: level.width,
+      //         height: level.height,
+      //         codec: level.currentCodec
+      //       });
+      //     }
 
-          // Enable/disable quality levels based on codec support
-          qualityLevels.on('addqualitylevel', (event) => {
-            const quality = event.qualityLevel;
-            if (quality.currentCodec && quality.currentCodec.includes('hevc')) {
-              quality.enabled = hasHEVCSupport;
-            }
-          });
-        }
-      });
+      //     // Enable/disable quality levels based on codec support
+      //     qualityLevels.on('addqualitylevel', (event) => {
+      //       const quality = event.qualityLevel;
+      //       if (quality.currentCodec && quality.currentCodec.includes('hevc')) {
+      //         quality.enabled = hasHEVCSupport;
+      //       }
+      //     });
+      //   }
+      // });
 
       // Enhanced error handling
       player.on('error', () => {
