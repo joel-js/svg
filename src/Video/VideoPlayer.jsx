@@ -4,35 +4,7 @@ import videojs from "video.js";
 import "video.js/dist/video-js.css";
 import "@videojs/http-streaming";
 
-import { videoTypes } from "./videoTypes";
 
-function checkHEVCSupport() {
-  const video = document.createElement('video');
-  // Check for HEVC support
-  const hevcSupport = video.canPlayType(`${videoTypes.app_xmpeg}; codecs="hvc1.1.6.L93.B0"`) || 
-                      video.canPlayType(`${videoTypes.app_xmpeg}; codecs="hevc,aac"`);
-  console.log("HEVC Support: ", hevcSupport);
-  return hevcSupport !== "";
-}
-
-function checkCodecSupport() {
-  const testFormats = [
-    { codec: 'hevc,mp4a.40.2', name: 'HEVC/H.265' },
-    { codec: 'avc1.42E01E', name: 'AVC/H.264' },
-    { codec: 'hev1.1.6.L93.B0', name: 'HEVC Main 10' },
-    { codec: 'hvc1.1.6.L93.B0', name: 'HEVC Main 10 (alternate)' }
-  ];
-
-  const video = document.createElement('video');
-  const results = {};
-
-  testFormats.forEach(format => {
-    results[format.name] = video.canPlayType(`${videoTypes.mp4}; codecs="${format.codec}"`);
-  });
-
-  console.log("Codec Support:", results);
-  return results;
-}
 
 export const VideoJS = (props) => {
   const videoRef = React.useRef(null);
@@ -47,8 +19,6 @@ export const VideoJS = (props) => {
       videoElement.classList.add("vjs-big-play-centered");
       videoRef.current.appendChild(videoElement);
 
-      const codecSupport = checkCodecSupport();
-      const hasHEVCSupport = checkHEVCSupport();
 
       const player = (playerRef.current = videojs(
         videoElement,
@@ -68,34 +38,9 @@ export const VideoJS = (props) => {
         },
         () => {
           videojs.log("player is ready");
-          videojs.log('HEVC Support:', hasHEVCSupport);
-          videojs.log('Codec Support:', codecSupport);
           onReady && onReady(player);
         }
       ));
-      // player.on('loadedmetadata', () => {
-      //   const qualityLevels = player.qualityLevels();
-      //   if (qualityLevels) {
-      //     // Log available quality levels and their codecs
-      //     for (let i = 0; i < qualityLevels.length; i++) {
-      //       const level = qualityLevels[i];
-      //       console.log(`Quality level ${i}:`, {
-      //         bandwidth: level.bitrate,
-      //         width: level.width,
-      //         height: level.height,
-      //         codec: level.currentCodec
-      //       });
-      //     }
-
-      //     // Enable/disable quality levels based on codec support
-      //     qualityLevels.on('addqualitylevel', (event) => {
-      //       const quality = event.qualityLevel;
-      //       if (quality.currentCodec && quality.currentCodec.includes('hevc')) {
-      //         quality.enabled = hasHEVCSupport;
-      //       }
-      //     });
-      //   }
-      // });
 
       // Enhanced error handling
       player.on('error', () => {
@@ -105,14 +50,10 @@ export const VideoJS = (props) => {
           code: error.code,
           message: error.message,
           type: error.type,
-          codecSupport: codecSupport
         });
 
         // Handle HEVC-specific errors
-        if (error.code === 4 && hasHEVCSupport === false) {
-          console.error('HEVC playback failed - codec not supported');
-          // You could implement fallback logic here
-        }
+        
       });
 
     } else {
