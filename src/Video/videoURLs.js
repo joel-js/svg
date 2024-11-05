@@ -46,6 +46,15 @@ export const urls = {
         },
         local: {
             url: "hevc_miramer.mkv"
+        },
+        steel: {
+            url: "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+        },
+        live_akami_1: {
+            url: "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
+        },
+        live_akami_2: {
+            url: "https://moctobpltc-i.akamaihd.net/hls/live/571329/eight/playlist.m3u8"
         }
     }
 }
