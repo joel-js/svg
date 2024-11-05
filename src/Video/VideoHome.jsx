@@ -12,19 +12,12 @@ const VideoHome = () => {
     controls: true,
     responsive: true,
     fluid: true,
-    sources: [{
-      src: urls.storybook.adaptive ,
-      type: 'application/x-mpegURL, codecs="hevc,mp4a.40.2"'
-    }],
-    /*
-    html5: {
-      vhs: {
-        overrideNative: true
+    sources: [
+      {
+        src: urls.hevc.bitmovin.url,
+        type: 'application/x-mpegURL',
       },
-      nativeAudioTracks: false,
-      nativeVideoTracks: false
-    }
-      */
+    ],
   };
 
   const handlePlayerReady = (player) => {

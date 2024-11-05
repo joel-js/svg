@@ -52,27 +52,17 @@ export const VideoJS = (props) => {
         videoElement,
         {
           ...options,
-          // html5: {
-          //   vhs: {
-          //     overrideNative: !hasHEVCSupport,
-          //     fastQualityChange: true,
-          //     // useBandwidthFromLocalStorage: true,
-          //     useDevicePixelRatio: true,
-          //     enableLowInitialPlaylist: false,
-          //     // maxMaxBufferLength: 30,
-          //     handleManifestRedirects: true,
-          //     bandwidth: 5000000, 
-          //     parseInbandId3: true,
-          //     experimentalBufferBasedABR: true,
-          //     codecs: {
-          //       enableHevc: hasHEVCSupport,
-          //       preferHevc: hasHEVCSupport,
-          //       blacklistCodecs: [] // Add codecs to blacklist if needed
-          //     }
-          //   },
-          //   nativeAudioTracks: hasHEVCSupport,
-          //   nativeVideoTracks: hasHEVCSupport,
-          // },
+          html5: {
+            vhs: {
+              overrideNative: false,
+              fastQualityChange: true,
+              useDevicePixelRatio: true,
+              handleManifestRedirects: true,
+              experimentalBufferBasedABR: true,
+            },
+            nativeAudioTracks: false,
+            nativeVideoTracks: false,
+          },
         },
         () => {
           videojs.log("player is ready");
