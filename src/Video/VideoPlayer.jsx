@@ -56,7 +56,7 @@ export const VideoJS = (props) => {
           ...options,
           html5: {
             vhs: {
-              overrideNative: true,
+              overrideNative: !videojs.browser.IS_SAFARI,
               fastQualityChange: true,
               useDevicePixelRatio: true,
               handleManifestRedirects: true,
