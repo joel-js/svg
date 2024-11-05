@@ -25,7 +25,7 @@ function checkCodecSupport() {
   const results = {};
 
   testFormats.forEach(format => {
-    results[format.name] = video.canPlayType(`video/mp4; codecs="${format.codec}"`);
+    results[format.name] = video.canPlayType(`application/x-mpegURL; codecs="${format.codec}"`);
   });
 
   console.log("Codec Support:", results);
