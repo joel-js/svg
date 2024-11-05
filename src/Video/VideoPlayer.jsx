@@ -56,7 +56,7 @@ export const VideoJS = (props) => {
           ...options,
           html5: {
             vhs: {
-              overrideNative: false,
+              overrideNative: true,
               fastQualityChange: true,
               useDevicePixelRatio: true,
               handleManifestRedirects: true,
