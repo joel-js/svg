@@ -3,7 +3,7 @@ import React from 'react';
 // This imports the functional component from the previous sample.
 import VideoJS from './VideoPlayer'
 import { urls } from './videoURLs';
-
+import { videoTypes } from './videoTypes';
 const VideoHome = () => {
   const playerRef = React.useRef(null);
 
@@ -14,8 +14,8 @@ const VideoHome = () => {
     fluid: true,
     sources: [
       {
-        src: urls.hevc.bitmovin.url,
-        type: 'application/x-mpegURL',
+        src: urls.miramar.hiTrue,
+        type: `${videoTypes.app_xmpeg}`,
       },
     ],
   };

@@ -4,11 +4,13 @@ import videojs from "video.js";
 import "video.js/dist/video-js.css";
 import "@videojs/http-streaming";
 
+import { videoTypes } from "./videoTypes";
+
 function checkHEVCSupport() {
   const video = document.createElement('video');
   // Check for HEVC support
-  const hevcSupport = video.canPlayType('video/mp4; codecs="hvc1.1.6.L93.B0"') || 
-                      video.canPlayType('video/mp4; codecs="hevc,aac"');
+  const hevcSupport = video.canPlayType(`${videoTypes.app_xmpeg}; codecs="hvc1.1.6.L93.B0"`) || 
+                      video.canPlayType(`${videoTypes.app_xmpeg}; codecs="hevc,aac"`);
   console.log("HEVC Support: ", hevcSupport);
   return hevcSupport !== "";
 }
