@@ -14,8 +14,8 @@ const VideoHome = () => {
     fluid: true,
     sources: [
       {
-        src: urls.miramar.hiTrue,
-        type: `${videoTypes.app_xmpeg}`,
+        src: urls.hevc.local.url,
+        type: `${videoTypes.mp4}`,
       },
     ],
   };
