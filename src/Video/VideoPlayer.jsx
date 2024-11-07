@@ -56,12 +56,12 @@ export const VideoJS = (props) => {
           ...options,
           html5: {
             vhs: {
-              withCredentials: true,
-              xhr: {
-                beforeSend: (xhr) => {
-                  xhr.setRequestHeader('Authorization', 'Bearer a4bg62grg75o3nml7180sj1h7p');
-                }
-              },
+              // withCredentials: true,
+              // xhr: {
+              //   beforeSend: (xhr) => {
+              //     xhr.setRequestHeader('Authorization', 'Bearer a4bg62grg75o3nml7180sj1h7p');
+              //   }
+              // },
               audio: false,
               handlePartialAudioTracks: false,
               // overrideNative: true,
