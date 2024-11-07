@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 // This imports the functional component from the previous sample.
-import VideoJS from './VideoPlayer'
-import { urls } from './videoURLs';
-import { videoTypes } from './videoTypes';
+import VideoJS from "./VideoPlayer";
+import { urls } from "./videoURLs";
+import { videoTypes } from "./videoTypes";
 const VideoHome = () => {
   const playerRef = React.useRef(null);
 
@@ -12,18 +12,18 @@ const VideoHome = () => {
     controls: true,
     responsive: true,
     fluid: true,
-    debug: true,
-  enableWorker: false,
-  lowLatencyMode: false,
-  backBufferLength: 5,
-  maxBufferLength: 6,
-  maxMaxBufferLength: 6,
-  frontBufferFlushThreshold: 6,
-  maxBufferSize: 0,
-  liveBackBufferLength: 5,
+    // debug: true,
+    // enableWorker: false,
+    // lowLatencyMode: false,
+    // backBufferLength: 5,
+    // maxBufferLength: 6,
+    // maxMaxBufferLength: 6,
+    // frontBufferFlushThreshold: 6,
+    // maxBufferSize: 0,
+    // liveBackBufferLength: 5,
     sources: [
       {
-        src: urls.storybook.hiTrue,
+        src: urls.hevc.bitmovin.url,
         type: `${videoTypes.app_xmpeg}`,
       },
     ],
@@ -33,15 +33,15 @@ const VideoHome = () => {
     playerRef.current = player;
 
     // You can handle player events here, for example:
-    player.on('waiting', () => {
-      console.log('player is waiting');
+    player.on("waiting", () => {
+      console.log("player is waiting");
     });
 
-    player.on('dispose', () => {
-      console.log('player will dispose');
+    player.on("dispose", () => {
+      console.log("player will dispose");
     });
   };
-  
+
   return (
     <>
       <div>Rest of app here</div>
@@ -49,7 +49,7 @@ const VideoHome = () => {
       <div>Rest of app here</div>
     </>
   );
-}
+};
 
 export default VideoHome;
 
@@ -184,4 +184,3 @@ export default VideoHome;
 //     </div>
 //   );
 // };
-
