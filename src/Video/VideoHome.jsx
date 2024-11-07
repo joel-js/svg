@@ -2,8 +2,8 @@ import React from "react";
 
 // This imports the functional component from the previous sample.
 import VideoJS from "./VideoPlayer";
-import { urls } from "./videoURLs";
-import { videoTypes } from "./videoTypes";
+// import { urls } from "./videoURLs";
+// import { videoTypes } from "./videoTypes";
 const VideoHome = () => {
   const playerRef = React.useRef(null);
 
@@ -23,8 +23,8 @@ const VideoHome = () => {
     // liveBackBufferLength: 5,
     sources: [
       {
-        src: urls.hevc.bitmovin.url,
-        type: `${videoTypes.app_xmpeg}`,
+        src: "https://cr-64.hostedcloudvideo.com/rtp-cr/_definst_/a4bg62grg75o3nml7180sj1h7p/28013e163c1e034ecd4eaa003672161dfe428f97/playlist.m3u8",
+        type: `application/vnd.apple.mpegurl`,
       },
     ],
   };
