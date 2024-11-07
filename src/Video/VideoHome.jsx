@@ -26,7 +26,9 @@ const VideoHome = () => {
         // src: "https://cr-64.hostedcloudvideo.com/rtp-cr/_definst_/a4bg62grg75o3nml7180sj1h7p/28013e163c1e034ecd4eaa003672161dfe428f97/playlist.m3u8",
         // src: "https://cr-64.hostedcloudvideo.com/rtp-cr/_definst_/a4bg62grg75o3nml7180sj1h7p/7b99a334306eb13adf8c764e49a14e9f01c3af73/playlist.m3u8",
         src: "https://vod.hostedcloudvideo.com/7b99a334306eb13adf8c764e49a14e9f01c3af73/vod.m3u8?timestamp=1730960698&segment_type=FMp4",
-        type: `application/vnd.apple.mpegurl`,
+        // src: "https://cr-64.hostedcloudvideo.com/rtp-cr/_definst_/a4bg62grg75o3nml7180sj1h7p/7b99a334306eb13adf8c764e49a14e9f01c3af73/media_w1328070133_vo_288494017.5_m3u8.cmfv",
+        // type: `application/vnd.apple.mpegurl`,
+        type: "application/x-mpegURL",
       },
     ],
   };
