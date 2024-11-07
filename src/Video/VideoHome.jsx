@@ -15,7 +15,7 @@ const VideoHome = () => {
     sources: [
       {
         src: urls.miramar.hiTrue,
-        type: `${videoTypes.app_xmpeg}; codecs="hvc1"`,
+        type: `${videoTypes.app_xmpeg}`,
       },
     ],
   };
