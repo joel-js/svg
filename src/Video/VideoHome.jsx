@@ -28,7 +28,8 @@ const VideoHome = () => {
         // src: "https://vod.hostedcloudvideo.com/7b99a334306eb13adf8c764e49a14e9f01c3af73/vod.m3u8?timestamp=1730960698&segment_type=FMp4",
         // src: "https://cr-64.hostedcloudvideo.com/rtp-cr/_definst_/a4bg62grg75o3nml7180sj1h7p/7b99a334306eb13adf8c764e49a14e9f01c3af73/media_w1328070133_vo_288494017.5_m3u8.cmfv",
         // src: "https://cr-64.hostedcloudvideo.com/rtp-cr/_definst_/a4bg62grg75o3nml7180sj1h7p/634b647856120c7ae8cbd1d309dcb209bb37cb3d/playlist.m3u8",
-        src: "https://vod.hostedcloudvideo.com/634b647856120c7ae8cbd1d309dcb209bb37cb3d/vod.m3u8?timestamp=1730965586&segment_type=FMp4",
+        // src: "https://vod.hostedcloudvideo.com/634b647856120c7ae8cbd1d309dcb209bb37cb3d/vod.m3u8?timestamp=1730965586&segment_type=FMp4",
+        src: "https://sitesecuritysystems.net:7001/media/761e568f-056b-3cd0-b86c-27375404ef5d.mpegts?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpoamxmOmMwNjI3MTc4MTYzNjg4ZWU1ZTRjNDc2ZDA1MjlmZTJh&pos=2024-11-06T21:31:09.000",
         // type: `application/vnd.apple.mpegurl`,
         type: "application/x-mpegURL",
         
