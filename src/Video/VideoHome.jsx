@@ -31,6 +31,7 @@ const VideoHome = () => {
         src: "https://vod.hostedcloudvideo.com/634b647856120c7ae8cbd1d309dcb209bb37cb3d/vod.m3u8?timestamp=1730965586&segment_type=FMp4",
         // type: `application/vnd.apple.mpegurl`,
         type: "application/x-mpegURL",
+        
       },
     ],
   };
