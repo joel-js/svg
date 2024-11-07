@@ -3,6 +3,7 @@ import React from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
 import "@videojs/http-streaming";
+import FFmpegWasmEngine from 'videojs-record/dist/plugins/videojs.record.ffmpeg-wasm.js';
 
 import { videoTypes } from "./videoTypes";
 
@@ -54,6 +55,24 @@ export const VideoJS = (props) => {
         videoElement,
         {
           ...options,
+          record: {
+            audio: true,
+            video: true,
+            maxLength: 20,
+            debug: true,
+            // enable ffmpeg.wasm plugin
+            convertEngine: 'ffmpeg.wasm',
+            // multi-threaded worker
+            coreURL: '/node_modules/@ffmpeg/core-mt/dist/umd/ffmpeg-core.js',
+            convertWorkerURL: '/node_modules/@ffmpeg/core-mt/dist/umd/ffmpeg-core.worker.js',
+            audioWebAssemblyURL: '/node_modules/@ffmpeg/core-mt/dist/umd/ffmpeg-core.wasm',
+            // convert recorded data to MP4 (and copy over audio data without encoding)
+            convertOptions: ['-c:v', 'libx264', '-preset', 'slow', '-crf', '22', '-c:a', 'copy', '-f', 'mp4'],
+            // specify output mime-type
+            pluginLibraryOptions: {
+                outputType: 'video/mp4'
+            }
+        },
           html5: {
             vhs: {
               audio: false,
