@@ -56,14 +56,16 @@ export const VideoJS = (props) => {
           ...options,
           html5: {
             vhs: {
-              overrideNative: true,
+              audio: false,
+              handlePartialAudioTracks: false,
+              // overrideNative: true,
               fastQualityChange: true,
               useDevicePixelRatio: true,
               handleManifestRedirects: true,
               experimentalBufferBasedABR: true,
             },
             nativeAudioTracks: false,
-            nativeVideoTracks: false,
+            nativeVideoTracks: true,
           },
         },
         () => {
