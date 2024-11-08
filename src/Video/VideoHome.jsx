@@ -29,10 +29,10 @@ const VideoHome = () => {
         // src: "https://cr-64.hostedcloudvideo.com/rtp-cr/_definst_/a4bg62grg75o3nml7180sj1h7p/7b99a334306eb13adf8c764e49a14e9f01c3af73/media_w1328070133_vo_288494017.5_m3u8.cmfv",
         // src: "https://cr-64.hostedcloudvideo.com/rtp-cr/_definst_/a4bg62grg75o3nml7180sj1h7p/634b647856120c7ae8cbd1d309dcb209bb37cb3d/playlist.m3u8",
         // src: "https://vod.hostedcloudvideo.com/634b647856120c7ae8cbd1d309dcb209bb37cb3d/vod.m3u8?timestamp=1730965586&segment_type=FMp4",
-        // src: "https://sitesecuritysystems.net:7001/media/761e568f-056b-3cd0-b86c-27375404ef5d.mpegts?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpoamxmOmMwNjI3MTc4MTYzNjg4ZWU1ZTRjNDc2ZDA1MjlmZTJh&pos=2024-11-06T21:31:09.000",
+        src: "https://sitesecuritysystems.net:7001/media/761e568f-056b-3cd0-b86c-27375404ef5d.mpegts?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpoamxmOmMwNjI3MTc4MTYzNjg4ZWU1ZTRjNDc2ZDA1MjlmZTJh&pos=2024-11-06T21:31:09.000",
         // src: "https://sitesecuritysystems.net:7001/media/761e568f-056b-3cd0-b86c-27375404ef5d.mp4?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpoamxmOmMwNjI3MTc4MTYzNjg4ZWU1ZTRjNDc2ZDA1MjlmZTJh&pos=2024-11-06T21:31:09.000",
         // src: "https://bitmovin-a.akamaihd.net/webpages/demos/content/multi-codec/hevc/stream_fmp4.m3u8",
-        src: "https://sitesecuritysystems.net:7001/media/52432602-49dd-add2-e448-29a99339e455.mp4?authKey=d2c5aea3-c38f-44c3-83b8-e05a20ee4cea&auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpnZWl6OmJhMWU2ZDI5ZGE5MjE0NDg2NGUzMmU3NTJjZjMzY2M1",
+        // src: "https://sitesecuritysystems.net:7001/media/52432602-49dd-add2-e448-29a99339e455.mp4?authKey=d2c5aea3-c38f-44c3-83b8-e05a20ee4cea&auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpnZWl6OmJhMWU2ZDI5ZGE5MjE0NDg2NGUzMmU3NTJjZjMzY2M1",
         // type: `application/vnd.apple.mpegurl`,
         // type: "application/x-mpegURL",
         type: 'video/mp4'
