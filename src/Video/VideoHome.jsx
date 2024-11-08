@@ -34,8 +34,8 @@ const VideoHome = () => {
         // src: "https://bitmovin-a.akamaihd.net/webpages/demos/content/multi-codec/hevc/stream_fmp4.m3u8",
         // src: "https://sitesecuritysystems.net:7001/media/52432602-49dd-add2-e448-29a99339e455.mp4?authKey=d2c5aea3-c38f-44c3-83b8-e05a20ee4cea&auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpnZWl6OmJhMWU2ZDI5ZGE5MjE0NDg2NGUzMmU3NTJjZjMzY2M1",
         // type: `application/vnd.apple.mpegurl`,
-        // type: "application/x-mpegURL",
-        type: 'video/mp4'
+        type: "application/x-mpegURL",
+        // type: 'video/mp4'
         
       },
     ],
