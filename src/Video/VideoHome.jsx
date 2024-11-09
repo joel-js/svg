@@ -35,7 +35,7 @@ const VideoHome = () => {
         // src: "https://sitesecuritysystems.net:7001/media/52432602-49dd-add2-e448-29a99339e455.mp4?authKey=d2c5aea3-c38f-44c3-83b8-e05a20ee4cea&auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpnZWl6OmJhMWU2ZDI5ZGE5MjE0NDg2NGUzMmU3NTJjZjMzY2M1",
         // src: "https://sitesecuritysystems.net:7001/media/52432602-49dd-add2-e448-29a99339e455.mp4?authKey=d2c5aea3-c38f-44c3-83b8-e05a20ee4cea&auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpnZWl6OmJhMWU2ZDI5ZGE5MjE0NDg2NGUzMmU3NTJjZjMzY2M1&pos=2024-11-07T09:00:00.000&rt=true&stream=1&resolution=320x240",
         // src: "https://sitesecuritysystems.net:7001/rest/v4/devices/52432602-49dd-add2-e448-29a99339e455/media.mp4?authKey=d2c5aea3-c38f-44c3-83b8-e05a20ee4cea&auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpnZWl6OmJhMWU2ZDI5ZGE5MjE0NDg2NGUzMmU3NTJjZjMzY2M1",
-        src: "https://sitesecuritysystems.net:7001/web/media/47d0d84e-c4e2-d7f1-ac0e-65ccfbbc41e4.webm?resolution=640x360&",
+        src: "https://sitesecuritysystems.net:7001/web/media/47d0d84e-c4e2-d7f1-ac0e-65ccfbbc41e4.webm?resolution=1920x1080&",
         // type: `application/vnd.apple.mpegurl`,
         // type: "application/x-mpegURL",
         // type: 'video/mp4'
