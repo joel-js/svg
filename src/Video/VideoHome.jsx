@@ -6,7 +6,7 @@ const VideoHome = () => {
     <>
       <div>Rest of app here</div>
       {/* <VideoJS options={videoJsOptions} onReady={handlePlayerReady} /> */}
-      <HLSPlayer src={urls.tapestry.hiTrue} />
+      <HLSPlayer src={"https://ddstorage.org/samples/hevc/bitmovin/v720p_ts.m3u8"} />
       <div>Rest of app here</div>
     </>
   );
