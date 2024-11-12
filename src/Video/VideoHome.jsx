@@ -44,7 +44,7 @@ const VideoHome = () => {
 
         // fairhaven
 
-        src: "https://sitesecuritysystems.net:7001/media/2f5e2f8e-7e42-dadf-8dc1-3a2f0043d0c5.mp4?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpmZ3dpOmMyY2YzYzg2MzQ3NjEyM2ZiZTkyZTAzYmE0ODU3OWVi&resolution=480p",
+        src: "https://sitesecuritysystems.net:7001/media/2f5e2f8e-7e42-dadf-8dc1-3a2f0043d0c5.webm?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpmZ3dpOmMyY2YzYzg2MzQ3NjEyM2ZiZTkyZTAzYmE0ODU3OWVi&resolution=480p",
 
         // type: `application/vnd.apple.mpegurl`,
         // type: "application/x-mpegURL",
