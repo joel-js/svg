@@ -39,12 +39,12 @@ const VideoHome = () => {
 
         // orange beach
 
-        // src: "https://sitesecuritysystems.net:7001/media/b7f46e7a-7bcd-d3bb-12be-a3d08271874e.mp4?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHp4enplOmIyNjMxYjNkMDBmNTVkNzQwNGU4NGY3YjZjN2VmYzQ4&resolution=480p",
+        // src: "https://sitesecuritysystems.net:7001/media/b7f46e7a-7bcd-d3bb-12be-a3d08271874e.mp4?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHp4enplOmIyNjMxYjNkMDBmNTVkNzQwNGU4NGY3YjZjN2VmYzQ4&resolution=1080p",
 
 
         // fairhaven
 
-        src: "https://sitesecuritysystems.net:7001/media/2f5e2f8e-7e42-dadf-8dc1-3a2f0043d0c5.mp4?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpmZ3dpOmMyY2YzYzg2MzQ3NjEyM2ZiZTkyZTAzYmE0ODU3OWVi&resolution=480p",
+        src: "https://sitesecuritysystems.net:7001/media/2f5e2f8e-7e42-dadf-8dc1-3a2f0043d0c5.mp4?auth=ZGFyc2huYS52QGluYXBwLmNvbTpydGZaaXB3ODl2ZXpBWEt1VXlCS1VldVp3eE0yMGc9aHpmZ3dpOmMyY2YzYzg2MzQ3NjEyM2ZiZTkyZTAzYmE0ODU3OWVi&resolution=1080p",
 
         // type: `application/vnd.apple.mpegurl`,
         // type: "application/x-mpegURL",

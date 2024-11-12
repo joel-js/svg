@@ -81,6 +81,32 @@ export const VideoJS = (props) => {
           onReady && onReady(player);
         }
       ));
+
+      const qualityLevels = player.qualityLevels();
+      
+      qualityLevels.on('change', () => {
+        for (let i = 0; i < qualityLevels.length; i++) {
+          const level = qualityLevels[i];
+          console.log(`LAPSE Quality level ${i}:`, {
+            width: level.width,
+            height: level.height,
+            bitrate: level.bitrate,
+            codec: level.currentCodec,
+          });
+        }
+      });
+
+      // Log codec of each quality level as they are added
+      qualityLevels.on('addqualitylevel', (event) => {
+        const quality = event.qualityLevel;
+        console.log(`LAPSE Added quality level:`, {
+          width: quality.width,
+          height: quality.height,
+          bitrate: quality.bitrate,
+          codec: quality.currentCodec,
+        });
+      });
+
       // player.on('loadedmetadata', () => {
       //   const qualityLevels = player.qualityLevels();
       //   if (qualityLevels) {
