@@ -5,7 +5,7 @@ const Home = () => {
 
   const [items, setItems] = React.useState([]);
   const [hide, setHide] = React.useState(false);
-  React.useEffect(() => setItems(Array(10).fill(0)), []);
+  React.useEffect(() => setItems(Array(27).fill(0)), []);
   return (
     <>
       <div

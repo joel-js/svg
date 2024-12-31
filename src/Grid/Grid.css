@@ -1,4 +1,4 @@
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -19,6 +19,12 @@
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
 }
 
 .gridItem:hover {
@@ -35,5 +41,83 @@
 @media screen and (min-width: 1024px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+} */
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    overflow-y: auto; /* Ensure scrolling for the container */
+    border: 1px solid #ddd; /* Optional for debugging layout */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    padding: 1rem; /* Add padding around the grid */
+}
+
+.gridItem {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    aspect-ratio: 4/3; /* Maintain a 4:3 aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    background: #f9f9f9; /* Default background for better readability */
+    text-align: center; /* Center align the text */
+}
+
+.gridItem.loading {
+    font-size: 1.5rem;
+    color: #555;
+    background: linear-gradient(45deg, #dcdcdc, #f3f3f3); 
+    animation: pulse 1.5s infinite; 
+}
+
+.gridItem.zero {
+    font-size: 2rem;
+    color: #888; 
+    background: #f2f2f2; 
+}
+
+.gridItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #f5f5f5;
+    }
+    100% {
+        background-color: #e0e0e0;
     }
 }
