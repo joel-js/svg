@@ -2,6 +2,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
+    overflow-y: auto;
+    border: 1px solid #ddd; 
 }
 
 .grid {
@@ -9,64 +11,14 @@
     grid-template-columns: 1fr;
     gap: 1rem;
     justify-items: center;
+    padding: 1rem; 
 }
 
 .gridItem {
     width: 100%;
     max-width: 400px;
     position: relative;
-    aspect-ratio: 4/3;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: black;
-}
-
-.gridItem:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-@media screen and (min-width: 640px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-} */
-
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    overflow-y: auto; /* Ensure scrolling for the container */
-    border: 1px solid #ddd; /* Optional for debugging layout */
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    justify-items: center;
-    padding: 1rem; /* Add padding around the grid */
-}
-
-.gridItem {
-    width: 100%;
-    max-width: 400px;
-    position: relative;
-    aspect-ratio: 4/3; /* Maintain a 4:3 aspect ratio */
+    aspect-ratio: 4/3; 
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
@@ -76,8 +28,8 @@
     font-size: 2rem;
     font-weight: bold;
     color: black;
-    background: #f9f9f9; /* Default background for better readability */
-    text-align: center; /* Center align the text */
+    background: #f9f9f9; 
+    text-align: center; 
 }
 
 .gridItem.loading {
@@ -121,3 +73,105 @@
         background-color: #e0e0e0;
     }
 }
+
+.buttonContainer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.moreButton,
+.lessButton {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.moreButton:hover,
+.lessButton:hover {
+    background-color: #0056b3;
+} */
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    padding: 1rem;
+  }
+  
+  .gridItem {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    aspect-ratio: 4/3;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    background: #f9f9f9;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .gridItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media screen and (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .buttonContainer {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .moreButton,
+  .lessButton {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .moreButton:hover,
+  .lessButton:hover {
+    background-color: #0056b3;
+  }
+  
