@@ -1,6 +1,6 @@
 // import TimeLine from "./TimeLine/TimeLine";
 // import StateTest from "./StateTest/StateTest";
-import Home from './Grid/Home'
+import GridHome from './Grid/Home'
 // import VideoHome from './Video/VideoHome';
 // import VLCHome from './VLC/Home';
 
@@ -9,7 +9,7 @@ const App = () => {
     <>
       {/* <TimeLine /> */}
       {/* <StateTest /> */}
-      <Home />
+      <GridHome />
       {/* <VideoHome /> */}
       {/* <VLCHome /> */}
     </>
