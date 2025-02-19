@@ -4,8 +4,8 @@
 // import GridLayout from './Grid-Layout/Home'
 // import VideoHome from './Video/VideoHome';
 // import VLCHome from './VLC/Home';
-import HLSHome from './HLS/Home'
-
+// import HLSHome from './HLS/Home'
+import IndexDBHome from './IndexDB/Home'
 const App = () => {
   return (
     <>
@@ -13,9 +13,10 @@ const App = () => {
       {/* <StateTest /> */}
       {/* <GridHome /> */}
       {/* <GridLayout /> */}
-      <HLSHome />
+      {/* <HLSHome /> */}
       {/* <VideoHome /> */}
       {/* <VLCHome /> */}
+      <IndexDBHome />
     </>
   )
 };
